@@ -1,0 +1,250 @@
+* {
+  overflow-x: clip;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  overflow: clip;
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 5px solid rgb(255, 167, 2);
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-search {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 320px;
+  border-radius: 25px;
+  border: solid 2px rgb(220, 220, 220);
+  outline: none;
+  padding: 8px 12px;
+}
+
+.input-search:focus {
+  border: 2px solid orange;
+}
+
+.close-icon {
+  position: relative;
+  top: -1px;
+  left: 330px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.close-icon:hover {
+  transform: scale(1.1);
+}
+
+.show-icon {
+  opacity: 1;
+}
+
+.search-icon {
+  position: relative;
+  top: -1px;
+  left: 335px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+}
+
+main {
+  flex-grow: 1;
+  max-width: 1240px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.image {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 20px;
+  width: 380px;
+  height: 230px;
+  object-fit: cover;
+}
+
+footer {
+  height: 60px;
+  margin: 0px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(1, 0, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 0, 6, 1) 0%,
+    rgba(255, 167, 2, 0.3) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+}
+
+footer a {
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.git-logo {
+  margin-left: 15px;
+  width: 48px;
+  height: 48px;
+}
+
+footer p {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rs-logo {
+  width: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgb(134, 134, 134);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 167, 2);
+  border-radius: 9em;
+}
+
+.git-logo:hover {
+  scale: 1.1;
+}
+
+.rs-logo:hover {
+  scale: 1.1;
+  padding: 5px;
+}
+
+.loader {
+  margin: auto;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #ffa600;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .images-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 814px) {
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-box {
+    margin: 15px 45px 10px 0px;
+  }
+
+  .image {
+    max-width: 680px;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .input-box {
+    margin: 15px 50px 10px 0px;
+  }
+  .input-search {
+    width: 270px;
+  }
+  .search-icon {
+    left: 290px;
+  }
+
+  .close-icon {
+    left: 290px;
+  }
+}
+
