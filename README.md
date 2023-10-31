@@ -14,4 +14,4 @@
 ## Screenshots
 
 ![](./assets/image-gallery-screen-dekstop.PNG)
-![](./assets/image-gallery-screen-mobile.PNG)
+![](./assets/mobile-screen.PNG)
